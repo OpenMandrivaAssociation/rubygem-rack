@@ -4,15 +4,21 @@
 Summary:	A modular Ruby webserver interface
 Name:		rubygem-%{rbname}
 
-Version:	1.1.2
+Version:	1.3.2
 Release:	1
 Group:		Development/Ruby
 License:	MIT
 URL:		http://rack.rubyforge.org
 Source0:	http://rubygems.org/gems/%{rbname}-%{version}.gem
-BuildRequires:	rubygems 
+Requires:	ruby-RubyGems
+Requires:	rubygem(bacon)	
+Requires:	rubygem(memcache-client)	
+Requires:	rubygem(mongrel)	
+BuildRequires:	ruby-RubyGems 
+BuildRequires:	rubygem(bacon)
+BuildRequires:	rubygem(mongrel)
 BuildArch:	noarch
-%rename		ruby-rack
+#%rename		ruby-rack
 
 %description
 Rack provides minimal, modular and adaptable interface for developing
@@ -23,7 +29,7 @@ middleware) into a single method call.
 
 %package	doc
 Summary:	Documentation for %{name}
-Group:		Books/Computer books
+Group:		Books/Computer books 
 Requires:	%{name} = %{EVRD}
 
 %description	doc
@@ -54,8 +60,7 @@ rm -rf %{buildroot}
 
 %files doc
 %doc %{ruby_gemdir}/gems/%{rbname}-%{version}/KNOWN-ISSUES
-%doc %{ruby_gemdir}/gems/%{rbname}-%{version}/README
-%doc %{ruby_gemdir}/gems/%{rbname}-%{version}/SPEC
+%doc %{ruby_gemdir}/gems/%{rbname}-%{version}/README.rdoc
 %doc %{ruby_gemdir}/doc/%{rbname}-%{version}
 %dir %{ruby_gemdir}/gems/%{rbname}-%{version}/example
 %{ruby_gemdir}/gems/%{rbname}-%{version}/example/*.rb
