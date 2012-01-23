@@ -44,9 +44,6 @@ Documents, RDoc & RI documentation for %{name}.
 %install
 %gem_install
 
-%clean
-rm -rf %{buildroot}
-
 %files
 %{_bindir}/rackup
 %dir %{ruby_gemdir}/gems/%{rbname}-%{version}
