@@ -18,7 +18,7 @@ BuildRequires:	ruby-RubyGems
 BuildRequires:	rubygem(bacon)
 BuildRequires:	rubygem(mongrel)
 BuildArch:	noarch
-%rename		ruby-rack
+#rename		ruby-rack
 
 %description
 Rack provides minimal, modular and adaptable interface for developing
