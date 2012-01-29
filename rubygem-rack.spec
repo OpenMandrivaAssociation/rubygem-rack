@@ -4,7 +4,7 @@
 Summary:	A modular Ruby webserver interface
 Name:		rubygem-%{rbname}
 
-Version:	1.3.2
+Version:	1.4.1
 Release:	1
 Group:		Development/Ruby
 License:	MIT
