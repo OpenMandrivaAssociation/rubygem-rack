@@ -1,4 +1,4 @@
-# Generated from rack-1.2.2.gem by gem2rpm5 -*- rpm-spec -*-          
+# Generated from rack-1.2.2.gem by gem2rpm5 -*- rpm-spec -*-
 %define	rbname	rack
 
 Summary:	A modular Ruby webserver interface
