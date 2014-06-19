@@ -4,8 +4,8 @@
 Summary:	A modular Ruby webserver interface
 Name:		rubygem-%{rbname}
 
-Version:	1.4.1
-Release:	2
+Version:	1.5.2
+Release:	1
 Group:		Development/Ruby
 License:	MIT
 URL:		http://rack.rubyforge.org
@@ -51,6 +51,8 @@ Documents, RDoc & RI documentation for %{name}.
 %{ruby_gemdir}/gems/%{rbname}-%{version}/bin/rackup
 %dir %{ruby_gemdir}/gems/%{rbname}-%{version}/contrib
 %{ruby_gemdir}/gems/%{rbname}-%{version}/contrib/*.svg
+%{ruby_gemdir}/gems/%{rbname}-%{version}/contrib/*.png
+%{ruby_gemdir}/gems/%{rbname}-%{version}/contrib/*.css
 %dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib
 %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/*
 %{ruby_gemdir}/specifications/%{rbname}-%{version}.gemspec
@@ -66,47 +68,3 @@ Documents, RDoc & RI documentation for %{name}.
 %{ruby_gemdir}/gems/%{rbname}-%{version}/test/*
 
 
-%changelog
-* Thu Feb 16 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 1.4.1-2
-+ Revision: 774723
-- mass rebuild of ruby packages against ruby 1.9.1
-
-* Mon Jan 30 2012 Crispin Boylan <crisb@mandriva.org> 1.4.1-1
-+ Revision: 769667
-- New release
-
-  + Per Øyvind Karlsen <peroyvind@mandriva.org>
-    - revert %%rename
-    - drop %%clean
-    - %rename ruby-rack
-
-* Sat Sep 10 2011 Alexander Barakin <abarakin@mandriva.org> 1.3.2-1
-+ Revision: 699185
-- imported package rubygem-rack
-
-* Tue Mar 15 2011 Per Øyvind Karlsen <peroyvind@mandriva.org> 1.1.2-1
-+ Revision: 645159
-- bump version down to 1.1.2 for compatibility
-- rename and regenerate spec with gem2rpm5
-- new release: 1.2.2
-
-* Tue Dec 14 2010 Rémy Clouard <shikamaru@mandriva.org> 1.1.0-3mdv2011.0
-+ Revision: 621823
-- rebuild for new rpm-mandriva-setup
-
-* Tue Dec 07 2010 Oden Eriksson <oeriksson@mandriva.com> 1.1.0-2mdv2011.0
-+ Revision: 614765
-- the mass rebuild of 2010.1 packages
-
-* Sun Apr 04 2010 Guillaume Rousse <guillomovitch@mandriva.org> 1.1.0-1mdv2010.1
-+ Revision: 531331
-- update to new version 1.1.0
-
-* Mon Feb 01 2010 Per Øyvind Karlsen <peroyvind@mandriva.org> 1.0.1-1mdv2010.1
-+ Revision: 499177
-- fix summary
-- import ruby-rack
-
-
-* Mon Feb  1 2010 Per Øyvind Karlsen <peroyvind@mandriva.org> 1.0.1-1
-- initial release
