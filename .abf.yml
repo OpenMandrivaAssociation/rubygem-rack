@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   rack-1.5.2.gem: a17f40c9beb03b458f537f42cf36dd90d8230625
+sources:
+  rack-1.6.0.gem: 5445294b5e0a66c8dc32b983ef57ef030100abb8

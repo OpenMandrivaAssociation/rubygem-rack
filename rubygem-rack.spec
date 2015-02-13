@@ -4,19 +4,14 @@
 Summary:	A modular Ruby webserver interface
 Name:		rubygem-%{rbname}
 
-Version:	1.5.2
-Release:	2
+Version:	1.6.0
+Release:	1
 Group:		Development/Ruby
 License:	MIT
 URL:		http://rack.rubyforge.org
 Source0:	http://rubygems.org/gems/%{rbname}-%{version}.gem
 Requires:	ruby-RubyGems
-Requires:	rubygem(bacon)	
-Requires:	rubygem(memcache-client)	
-Requires:	rubygem(mongrel)	
 BuildRequires:	ruby-RubyGems 
-BuildRequires:	rubygem(bacon)
-BuildRequires:	rubygem(mongrel)
 BuildArch:	noarch
 #rename		ruby-rack
 
@@ -46,25 +41,25 @@ Documents, RDoc & RI documentation for %{name}.
 
 %files
 %{_bindir}/rackup
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/bin
-%{ruby_gemdir}/gems/%{rbname}-%{version}/bin/rackup
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/contrib
-%{ruby_gemdir}/gems/%{rbname}-%{version}/contrib/*.svg
-%{ruby_gemdir}/gems/%{rbname}-%{version}/contrib/*.png
-%{ruby_gemdir}/gems/%{rbname}-%{version}/contrib/*.css
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/*
-%{ruby_gemdir}/specifications/%{rbname}-%{version}.gemspec
+%dir %{gem_dir}/gems/%{rbname}-%{version}
+%dir %{gem_dir}/gems/%{rbname}-%{version}/bin
+%{gem_dir}/gems/%{rbname}-%{version}/bin/rackup
+%dir %{gem_dir}/gems/%{rbname}-%{version}/contrib
+%{gem_dir}/gems/%{rbname}-%{version}/contrib/*.svg
+%{gem_dir}/gems/%{rbname}-%{version}/contrib/*.png
+%{gem_dir}/gems/%{rbname}-%{version}/contrib/*.css
+%dir %{gem_dir}/gems/%{rbname}-%{version}/lib
+%{gem_dir}/gems/%{rbname}-%{version}/lib/*
+%{gem_dir}/specifications/%{rbname}-%{version}.gemspec
 
 %files doc
-%doc %{ruby_gemdir}/gems/%{rbname}-%{version}/KNOWN-ISSUES
-%doc %{ruby_gemdir}/gems/%{rbname}-%{version}/README.rdoc
-%doc %{ruby_gemdir}/doc/%{rbname}-%{version}
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/example
-%{ruby_gemdir}/gems/%{rbname}-%{version}/example/*.rb
-%{ruby_gemdir}/gems/%{rbname}-%{version}/example/*.ru
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/test
-%{ruby_gemdir}/gems/%{rbname}-%{version}/test/*
+%doc %{gem_dir}/gems/%{rbname}-%{version}/KNOWN-ISSUES
+%doc %{gem_dir}/gems/%{rbname}-%{version}/README.rdoc
+%doc %{gem_dir}/doc/%{rbname}-%{version}
+%dir %{gem_dir}/gems/%{rbname}-%{version}/example
+%{gem_dir}/gems/%{rbname}-%{version}/example/*.rb
+%{gem_dir}/gems/%{rbname}-%{version}/example/*.ru
+%dir %{gem_dir}/gems/%{rbname}-%{version}/test
+%{gem_dir}/gems/%{rbname}-%{version}/test/*
 
 
