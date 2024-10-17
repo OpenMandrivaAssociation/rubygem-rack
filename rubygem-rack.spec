@@ -8,7 +8,7 @@ Version:	1.6.0
 Release:	3
 Group:		Development/Ruby
 License:	MIT
-URL:		http://rack.rubyforge.org
+URL:		https://rack.rubyforge.org
 Source0:	http://rubygems.org/gems/%{rbname}-%{version}.gem
 Requires:	ruby-RubyGems
 BuildRequires:	ruby-RubyGems 
